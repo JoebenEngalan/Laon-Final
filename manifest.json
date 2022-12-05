@@ -1,0 +1,30 @@
+{
+  "name": "LAON",
+  "short_name": "LAON",
+  "icons": [{
+    "src": "images/LAON-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "images/LAON-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "images/LAON-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "images/LAON-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }, {
+      "src": "images/LAON-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "transparent",
+  "theme_color": "transparent"
+}

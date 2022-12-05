@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">    
+    <title>LAON</title>
+
+    <link href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@100;400&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <link href="css/form.css" type="text/css" rel="stylesheet">
+    <link href="css/hey.css" type="text/css" rel="stylesheet">
+    <link href="css/weather.css" type="text/css" rel="stylesheet">
+    
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/LAON-152.png">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="LAON">
+    <meta name="msapplication-TileImage" content="images/LAON-144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/viljamis/responsive-nav.js/master/responsive-nav.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>        
+    
+  </head>  
+<body>  
+ <!--for navbar-->
+</head>
+<body>
+
+  <header>
+    <div class="container">
+        <a  href="index.html" class="logo">LAON</a>
+        <nav class="nav-collapse">
+          <ul>
+            <li class="menu-item active"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="colorpick.html">Scan Leaf</a></li>
+            <li class="menu-item"><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
+
+  <br>
+  <br>
+
+  <div class="wcontainer">
+        <div class="app-title">
+            <p>Weather Today</p>
+        </div>
+      <div class="notification"></div>
+      <div class="weather-container">
+          <div class="weather-icon">
+              <img src="icons/unknown.png" alt="">
+          </div>
+          <div class="temperature-value">
+              <p>- °<span>C</span></p>
+          </div>
+          <div class="temperature-description">
+              <p>-</p>
+          </div>
+          <div class="location">
+              <p>-</p>
+          </div>
+      </div>  
+  </div>
+
+<div class="scontainer">
+
+  <div class="message">
+    <p>-</p>
+  </div>
+    
+  <div class="button1" id="button1" style="visibility:hidden;">
+    <span onclick="confirmAction()">Scan Leaf</span>
+  </div>
+        
+  <div class="button" id="button">
+    <span id="myBtn">SET 1ST SCAN</span>
+  </div>
+
+</div>
+
+<div id="myModal" class="modal">
+<!-- Modal content -->
+<div class="modal-content">
+  <div class="modal-header">
+      <label for="modal"><span class="close">&times;</span></label>
+    
+    <h2>SET FOR DAYS FOR YOUR FIRST SCAN</h2>
+  </div>
+    <div class="modal-body">
+      <form id="task-form">
+        <br>
+        <!--  General -->
+        <div class="form-group">
+        <h1>DISPLAY DATE FIRST READING</h1>
+          <br>
+          <div class="controls">
+            <input type="text"  id="title" class="floatLabel" name="name" required readonly>
+          </div>
+        </div>
+            <!--  Details -->
+            <div class="form-group" style="display:none;">
+              <p id="title"></p>
+              <p id="deadline-hours"></p>    
+              <p id="deadline-minutes"></p>
+              <p id="deadline-month"></p>
+              <p id="deadline-day"></p>
+              <p id="deadline-year"></p>
+            </div>
+            <!--  More -->
+            <div class="form-group">
+              <div>
+                <div class="button" id="button">
+                  <span onclick="setdate1()">
+                    Rice Transplanting<br>
+                    14 days
+                  </span>
+                </div>
+               
+                <div class="button" id="button">
+                  <span onclick="setdate2()">
+                    Direct Wet-seeded<br>
+                    21 days
+                  </span>
+                </div>    
+              
+              </div>
+              <div class="controls">
+                <input type="submit" id="submit" value="SET TASK" default>
+              </div>
+            </div>
+            <div id="toolbar">
+              <button id="enable">
+                Enable notifications
+              </button>
+            </div>
+          </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="right-div right-text">
+  <h2 class="heading1">To Do List</h2>
+    <div class="form-group">
+      <div class="controls">
+        <div class="task-box">
+          <ul id="task-list">
+          </ul>
+        </div>
+      </div> 
+    </div>  
+
+    <div class="form-group" style="display:none;" >
+      <details id="toolbar">
+        <summary>See More</summary>
+          <ul id="notifications">
+          </ul>
+        </details>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/weather.js"></script>
+<script src="js/form.js"></script>
+<script src="js/setdate.js"></script>
+<script src="js/todo.js"></script>
+
+</body>
+</html>  

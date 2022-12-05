@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">  
+    <title>LAON</title>
+    <link href="css/form.css" type="text/css" rel="stylesheet">
+    <link href="css/hey.css" type="text/css" rel="stylesheet">
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="LAON">
+    <meta name="msapplication-TileImage" content="images/LAON-144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">  
+    
+    <link href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@100;400&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/viljamis/responsive-nav.js/master/responsive-nav.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!--for navbar-->
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+          <a href="index.html" class="logo">LAON</a>
+          <nav class="nav-collapse">
+            <ul>
+              <li class="menu-item active"><a href="index.html">Home</a></li>
+              <li class="menu-item"><a href="colorpick.html">Scan Leaf</a></li>
+              <li class="menu-item"><a href="notification.html">To Do</a></li>
+              <li class="menu-item"><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+<div class="container">
+  <div class="left-div left-text">
+      
+    <h2 class="heading1">Add To Do</h2>
+
+    <form id="task-form" action="index.html">
+      <!--  General -->
+      <div class="form-group">
+          <h2 class="heading">Add Title</h2>
+          <div class="controls">
+              <input type="text"  id="title" class="floatLabel" name="name" required >
+              <label for="name">Title Name</label>
+              <div class="controls" >              
+                <input role="button" tabindex="0" type="submit1" onClick="autoFill()" value="Autofill">
+              </div>
+          
+          </div>
+      </div>
+      
+      <!--  Details -->
+      <div class="form-group" style="display: none;">
+        <p id="deadline-hours" class="floatLabel" ></p>    
+        <p id="deadline-minutes" class="floatLabel"></p>
+        <p id="deadline-month" class="floatLabel"></p>
+        <p id="deadline-day" class="floatLabel"></p>
+        <p id="deadline-year" class="floatLabel"></p>
+      </div>
+      <!--  More -->
+      <div class="form-group">
+        <div class="controls">
+          <input type="submit" id="submit" value="Add Task" default>
+        </div>
+      </div>
+
+      <div id="toolbar">
+        <button id="enable">
+          Enable notifications
+          </button>
+      </div>
+    </form>  
+
+    </div>
+        <div class="right-div right-text">
+
+        <h2 class="heading1">To Do List</h2>
+          <div class="form-group">
+            <div class="controls">
+              <div class="task-box">
+                <ul id="task-list">
+                </ul>
+              </div>   
+                          
+        <div id="toolbar" >
+            <ul id="notifications" style="visibility: hidden">
+            </ul>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+</div>
+
+</div>
+<script src="js/form.js"></script>
+<script src="js/todo.js"></script>
+</body>
+</html>

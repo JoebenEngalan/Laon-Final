@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">    
+    <title>LAON</title>
+
+    <link href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@100;400&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <link href="css/form.css" type="text/css" rel="stylesheet">
+    <link href="css/hey.css" type="text/css" rel="stylesheet">
+    <link href="css/picker.css" type="text/css" rel="stylesheet">
+ 
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/LAON-152.png">
+    <link rel="manifest" href="manifest.json">
+
+    
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="LAON">
+    <meta name="msapplication-TileImage" content="images/LAON-144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/viljamis/responsive-nav.js/master/responsive-nav.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+  
+  </head>  
+<body> 
+
+    
+  <header>
+    <div class="container">
+        <a  href="index.html" class="logo">LAON</a>
+        <nav class="nav-collapse">
+          <ul>
+            <li class="menu-item active"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="colorpick.html">Scan Leaf</a></li>
+            <li class="menu-item"><a href="about.html">About</a></li>   
+          </ul>
+        </nav>
+      </div>
+    </header>
+   
+    <br>
+    <br>
+    <br>
+    
+    <div class="form-group">
+      <div class="first">
+        <img id="image_picker" class="center">
+        </div>
+         <br>   
+        <div class="fileUpload">
+          <input type="file" id="file-ip-1" accept="image/*"onchange="showPreview(event);" class="upload form-control editField file-upload"/>
+          <span>Upload Image</span>    
+        </div>
+      
+        <div class="fileReset" id="file_reset">
+          <span>Block Reset</span>
+        </div> 
+
+        <div class="fileResult" id="fileResult" style="visibility:hidden;">
+          <span>RESULT</span>
+        </div>  
+
+        <div class="center"> 
+          <br>
+          <br>
+          <h1>Picture Process </h1>
+          <br>
+          <p class="counter-display">0</p>
+          <br>
+          <br>
+        </div>
+        
+        <details id="myDetails" open>
+          <summary>See More</summary>
+            <ul id="picked"></ul>
+        </details>
+
+        <form id="task-form" style="visibility:hidden;">
+          <br>
+          <div class="first">
+            <p>Optimal Ferilizer Need By Seasons:</p>
+            <div id="leaf">STATUS: <input type="text"></div>
+            <div id="wet">WET: <input type="text"></div>
+            <div id="dry">DRY: <input type="text"></div>
+          </div>
+          <br>
+          <br>
+          <!--  General -->
+          <div class="form-group">
+            <div>Next Reading:</div>
+            <input type="text" id="title" name="name" readonly>
+          </div>
+          <!--  Details -->
+          <div class="form-group" style="display: none;">
+            <p id="deadline-hours"></p>    
+            <p id="deadline-minutes"></p>
+            <p id="deadline-month"></p>
+            <p id="deadline-day"></p>
+            <p id="deadline-year"></p>
+          </div>
+          <!--  More -->
+          <div class="form-group">
+            <div class="controls">
+              <input type="submit" id="submit" value="Add Task" default>
+            </div>
+          </div>
+    
+          <div id="toolbar">
+            <button id="enable">
+              Enable notifications
+              </button>
+          </div>
+        </form>    
+    </div>
+
+    <div style="display:none;">
+        <div id="toolbar">
+          <ul id="notifications">
+          <ul id="task-list">
+          </ul>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/picker.js"></script>
+<script src="js/nextread.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/form.js"></script>
+
+</body>
+</html>

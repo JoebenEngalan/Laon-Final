@@ -1,0 +1,290 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, details,label {
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Colors */
+/* ---------------------------------------- */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  padding: 6em 10%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.heading1 {
+  font-size: 25px;
+  text-transform: uppercase;
+   font-size: 25px;
+   line-height: 55px;
+   font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  color: #367d3f;
+
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+
+h2.heading {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: left;
+  color: #506982;
+  border-bottom: 1px solid #506982;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  position: relative;
+}
+
+.controls input[type="text"],
+.controls input[type="number"],
+.controls textarea,
+.controls input[type=submit],
+.controls select {
+  padding: 15px;
+  font-size: 20px;
+  border: 1px solid #c6c6c6;
+  width: 40%;
+  margin-bottom: 15px;
+  color: black;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #fff;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.controls input[type="text"]:focus, .controls input[type="text"]:hover,
+
+.controls input[type="number"]:focus,
+.controls input[type="number"]:hover,
+.controls input[type=submit]:focus,
+.controls select:focus,
+.controls select:hover {
+  outline: none;
+  border-color: #9FB1C1;
+}
+.controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
+.controls input[type="number"]:focus + label,
+.controls input[type="number"]:hover + label,
+
+.controls input[type=submit]:focus + label,
+.controls input[type=submit]:hover + label,
+.controls select:focus + label,
+.controls select:hover + label {
+  color: #888;
+  cursor: text;
+  
+}
+
+
+.controls option:focus {
+  font-family: 'Roboto', 'sans-serif';
+
+}
+.controls .fa-sort {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  color: #999;
+}
+
+.controls select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.controls option {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.controls label {
+  position: relative;
+  left: 8px;
+  top: 1px;
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  padding: 4px 10px ;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+  pointer-events: none;
+  -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  transition: color 0.3s, top 0.3s, background-color 0.8s;
+}
+
+.controls label{
+  font-size: 12px;
+}
+
+.controls label.active {
+  top: -11px;
+  color: #555;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  
+}
+.controls textarea {
+  resize: none;
+  height: 300px;
+}
+.controls input[type=submit] {
+  cursor: pointer;
+  background-color: #367d3f;
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+}
+
+.controls input[type=submit]:hover {
+  background-color: #fff;
+  color: #367d3f;
+}
+
+
+/* div for forms */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+.container
+{
+  padding: 10px;  
+}
+.left-div
+{
+  display: inline-block;
+  max-width: 300px;
+  text-align: left;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 15px;
+  vertical-align: top;
+}
+.right-div
+{
+  display: inline-block;
+  max-width: 300px;
+  text-align: left;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 3px;
+  margin: 15px;
+}
+
+@media screen and (max-width: 600px) 
+{
+  .left-div, .right-div
+    {
+       max-width: 100%;
+    }
+}
+
+/* LI DESIGN*/
+li {
+  display: list-item;
+  text-align: left;
+  list-style-type:none;
+  border-radius: 3px;
+  padding: 10px;
+  font-weight:bolder;
+  color: #506982;
+  
+}
+
+
+ul li::marker {
+
+  padding-left: 10px;
+  unicode-bidi: isolate;
+    font-variant-numeric: normal;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+
+}
+

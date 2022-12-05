@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'>
+  <link rel="stylesheet" href="./css/style.css">
+ 
+  
+  <link href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@100;400&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  
+  <link href="css/form.css" type="text/css" rel="stylesheet">
+  <link href="css/hey.css" type="text/css" rel="stylesheet">
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/LAON-152.png">
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="white">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="LAON">
+  <meta name="msapplication-TileImage" content="images/LAON-144.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/viljamis/responsive-nav.js/master/responsive-nav.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+
+  <style>
+    .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  </style>
+
+</head>
+<body>
+  <!-- partial:index.partial.html -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">LAON</a>
+      <nav class="nav-collapse">
+        <ul>
+          <li class="menu-item active"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="colorpick.html">Scan Leaf</a></li>
+          <li class="menu-item"><a href="notification.html">To Do</a></li>
+          <li class="menu-item"><a href="#about">About</a></li>   
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <br><br><br>
+
+  &nbsp;
+  <center><img class=""  src="images/LAON-128.png"   alt="LAON"></center>
+  &nbsp;
+
+  <div id="accordion" class="myaccordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">LAON
+            <span class="fa-stack fa-sm">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-minus fa-stack-1x fa-inverse"></i>
+            </span>
+          </button>
+        </h2>
+      </div>
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          <p class="paragraph">
+            The <strong>LAON</strong> is an application that automates the leaf color chart (LCC), which is typically used by the IRRI and PhilRice. Farmers collect at least ten images of uniform rice leaf sizes from the selected rice field. The sample images will be assessed and compare to  LCC (LCC Standard) to give fertilizer to the rice plant which is according to the nitrogen level (2-5) of the LCC. In which record shows the significance of image uploading and scanning of the rice leaf, as well as adding tasks for rice leaf assessment. In addition, it performs thoroughly in determining weather updates. Therefore, concluded that the results showed positive results in accessing the color level of the rice leaf.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            HOW LAON WORKS
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+          </span>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <p class="paragraph">
+          <strong>Home Page</strong> 
+
+          <br><br>
+          
+          <strong>1.</strong> Allow the application to know the user's location to give the weather in the area.
+                        
+          <br><br>
+
+          <strong>Scan Leaf Page</strong> 
+
+          <br><br>
+
+          <strong>1.</strong> Upload ten rice leaf sample photos one by one. <br>
+          <strong>2.</strong> As the photo shows, users must click on the green color of the leaf to detect the greenness of the leaf.<br>
+          <strong>3.</strong> After the color is detected, it will show the color extracted from the photo and give the RGB and HEX value of the color and the level of the greenness of the leaf according to the Leaf Color Chart.<br>
+          <strong>4.</strong> A link will also show that will direct the user to the to-do page and add a task.<br>
+
+          <br>
+
+          <strong>TODO Page</strong>
+
+          <br><br>
+
+          <strong>1.</strong> To-do page, the user can add a task on their next leaf reading, monitor each task deadline, and notify the user on the deadline.<br>
+          <strong>2.</strong> Add a task title <br>
+          <strong>3.</strong> Click the autofill button, generating a date for the next leaf reading.<br>
+          <strong>4.</strong> Save the task<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">LCC Guidelines and Procedures
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+          </span>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        <p class="paragraph">
+
+          <br>
+
+          <strong>Guidelines in Using the Leaf Color Chart</strong> by PhilRice and IRRI
+          
+          <br><br>
+
+          <img class="center"  src="images/lcc.png" alt="LCC Standard">
+
+          <br>
+
+	        <strong>Yellowish green (No. 2)</strong> represents the <u>lowest</u> nitrogen concentration and <strong>dark green (No. 5)</strong> is the <u>highest</u>. 
+          
+          <br><br>
+
+          <strong> Remember:</strong>
+          
+          <br><br>
+
+          <strong>•</strong>	Take the <strong>first LCC reading at 14 days after transplanting (DAT)</strong>.  <br>
+          <strong>•</strong>	However, if <u>14-14-14-12S</u> is applied through soil incorporation or as <u>top-dress at 14 DAT</u>, <strong>start LCC reading at 21 DAT</strong>. <br>
+          <strong>•</strong>	For <strong>direct wet-seeded rice, start taking readings at 21 days</strong> after direct wet seeding. <br><br>
+            
+          <strong> Procedures:	</strong>
+
+          <br><br>
+
+          <strong>1.</strong> Randomly <strong>select 10 healthy plants</strong> in your field where plant distribution is uniform. <br>
+          <strong>2.</strong>	Select the topmost, fully expanded, and healthy leaf of each of the 10 plants. Take LCC readings by placing the middle part of the leaf on top of the LCC’s color strips for comparison. Do not detach the leaf and do not expose the LCC to direct sunlight during readings. The same person should take the LCC readings at <strong>the same time of the day between 8:00 a.m. and 10:00 a.m.</strong> from the <u>first up to the last reading</u>. <br>
+          <strong>3.</strong>	If more than <strong>5 out of 10 leaves have readings below 4 in transplanted rice</strong> and <strong>below 3 in direct wet-seeded rice</strong>, apply <u>30 kg N/ha during the dry season (DS)</u> or <u>23 kg N/ha during the wet season (WS)</u>. Use <u>1.5 bags of urea per hectare</u> during <strong>DS</strong> or <u>1 bag of urea</u> during <strong>WS</strong>. Do not use ammonium sulfate since sulfur is adequately supplied with the basal application of 14-14-14-12S. <br>
+          <strong>4.</strong>	<strong>Repeat LCC readings every seven days (7) until the first flowering</strong>. Different sets of 10 leaves can be used for each weekly reading. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js'></script>
+  <script src="./js/script.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
